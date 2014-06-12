@@ -11,7 +11,7 @@ import scala.collection._
 import scala.concurrent.duration._
 import akka.persistence._
 
-
+//
 sealed trait State
 case object Idle extends State
 case object Active extends State
