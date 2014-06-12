@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for firstakka#firstakka$sources_javadoc_2.10;1.0 [compile]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e40bcb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b2b39
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.3 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.10;2.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a05623
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14408d6
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.3.3
 [debug] 	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.3.3
 [debug] 	found com.typesafe.akka#akka-actor_2.10;2.3.3 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.3.3 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe#config;1.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@247c21
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14a1d7a
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
 [debug] 	local: revision in cache: com.typesafe#config;1.2.1
 [debug] 	found com.typesafe#config;1.2.1 in sbt-chain
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe#config;1.2.1 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@101b956
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8cf2ee
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2
 [debug] 	local: revision in cache: com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2
 [debug] 	found com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2 in sbt-chain
@@ -43,7 +43,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.iq80.leveldb#leveldb;0.5 [compile->default(compile)]
 [info] Resolving org.iq80.leveldb#leveldb;0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c78e7a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28045f
 [debug] sbt-chain: module revision found in cache: org.iq80.leveldb#leveldb;0.5
 [debug] 	local: revision in cache: org.iq80.leveldb#leveldb;0.5
 [debug] 	found org.iq80.leveldb#leveldb;0.5 in sbt-chain
@@ -52,7 +52,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.iq80.leveldb#leveldb;0.5 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.iq80.leveldb#leveldb-api;0.5 [compile->default(compile)]
 [info] Resolving org.iq80.leveldb#leveldb-api;0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fd844
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18ec4d3
 [debug] sbt-chain: module revision found in cache: org.iq80.leveldb#leveldb-api;0.5
 [debug] 	local: revision in cache: org.iq80.leveldb#leveldb-api;0.5
 [debug] 	found org.iq80.leveldb#leveldb-api;0.5 in sbt-chain
@@ -61,7 +61,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.iq80.leveldb#leveldb-api;0.5 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.google.guava#guava;12.0 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;12.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8edb68
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@148b82b
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;12.0
 [debug] 	local: revision in cache: com.google.guava#guava;12.0
 [debug] 	found com.google.guava#guava;12.0 in sbt-chain
@@ -70,7 +70,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.google.guava#guava;12.0 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.7 [compile->default(compile)]
 [info] Resolving org.fusesource.leveldbjni#leveldbjni-all;1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ed3cfa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d8a6d
 [debug] sbt-chain: module revision found in cache: org.fusesource.leveldbjni#leveldbjni-all;1.7
 [debug] 	local: revision in cache: org.fusesource.leveldbjni#leveldbjni-all;1.7
 [debug] 	found org.fusesource.leveldbjni#leveldbjni-all;1.7 in sbt-chain
@@ -79,7 +79,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.7 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.leveldbjni#leveldbjni;1.7 [compile->default(compile)]
 [info] Resolving org.fusesource.leveldbjni#leveldbjni;1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ac686a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e63da9
 [debug] sbt-chain: module revision found in cache: org.fusesource.leveldbjni#leveldbjni;1.7
 [debug] 	local: revision in cache: org.fusesource.leveldbjni#leveldbjni;1.7
 [debug] 	found org.fusesource.leveldbjni#leveldbjni;1.7 in sbt-chain
@@ -88,7 +88,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.leveldbjni#leveldbjni;1.7 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.hawtjni#hawtjni-runtime;1.8 [compile->default(compile)]
 [info] Resolving org.fusesource.hawtjni#hawtjni-runtime;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9d4c6f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15e40d0
 [debug] sbt-chain: module revision found in cache: org.fusesource.hawtjni#hawtjni-runtime;1.8
 [debug] 	local: revision in cache: org.fusesource.hawtjni#hawtjni-runtime;1.8
 [debug] 	found org.fusesource.hawtjni#hawtjni-runtime;1.8 in sbt-chain
@@ -97,7 +97,7 @@
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->org.fusesource.hawtjni#hawtjni-runtime;1.8 [compile->master]
 [debug] == resolving dependencies firstakka#firstakka$sources_javadoc_2.10;1.0->com.google.protobuf#protobuf-java;2.5.0 [compile->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a9d431
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12e7868
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	local: revision in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
@@ -842,7 +842,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(doc)
-[debug] :: resolution report :: resolve 557ms :: artifacts dl 73ms
+[debug] :: resolution report :: resolve 1996ms :: artifacts dl 222ms
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 compile produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-compile.xml
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 runtime produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-runtime.xml
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 test produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-test.xml
@@ -856,4 +856,4 @@
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 docs produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-docs.xml
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 pom produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-pom.xml
 [debug] 	report for firstakka#firstakka$sources_javadoc_2.10;1.0 scala-tool produced in C:\Users\Salah\FirstAkka\target\resolution-cache\reports\firstakka-firstakka$sources_javadoc_2.10-scala-tool.xml
-[debug] 	resolve done (557ms resolve - 73ms download)
+[debug] 	resolve done (1996ms resolve - 222ms download)

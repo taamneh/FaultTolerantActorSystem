@@ -4,7 +4,7 @@
 		module="firstakka$sbt_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20140611154029"
+		publication="20140612094251"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
