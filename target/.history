@@ -1,0 +1,10 @@
+compile
+build
+recompile
+test
+compile
+run
+compile
+run
+compile
+run

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="firstakka"
+		module="firstakka$sources_javadoc_2.9.1"
+		revision="1.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140610142557"/>
+	<dependencies>
+		<module organisation="com.typesafe.akka" name="akka-actor">
+			<revision name="2.0" status="release" pubdate="20140610003936" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2528" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-actor\ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.9.1" conf="test, compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-actor" type="jar" ext="jar" status="no" details="" size="1845794" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-actor\jars\akka-actor-2.0.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0.jar"/>
+					</artifact>
+					<artifact name="akka-actor" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="362595" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-actor\srcs\akka-actor-2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0-sources.jar"/>
+					</artifact>
+					<artifact name="akka-actor" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1740945" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-actor\docs\akka-actor-2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0/akka-actor-2.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.9.1-1" status="release" pubdate="20120304090830" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2422" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-library\ivy-2.9.1-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.9.1" conf="test, compile, runtime" rev="2.9.1-1" rev-constraint-default="2.9.1-1" rev-constraint-dynamic="2.9.1-1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="20370147" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-library\docs\scala-library-2.9.1-1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1125293" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.9.1-1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="8847209" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.9.1-1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
