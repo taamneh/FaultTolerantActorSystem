@@ -2,7 +2,9 @@
  * Created by Salah on 6/10/2014.
  */
 
+
 import akka.actor._
+import akka.pattern.{ ask, pipe }
 import akka.actor.SupervisorStrategy._
 import com.typesafe.config.ConfigFactory
 import akka.event.LoggingReceive
@@ -11,6 +13,8 @@ import scala.collection.parallel.immutable
 import scala.collection._
 import scala.concurrent.duration._
 import akka.persistence._
+import scala.concurrent.Await
+import akka.util.Timeout
 
 
 object Exception_Msgs
@@ -24,6 +28,8 @@ case object Request
 case class Evt (sal: Int)
 case class Cmd (step: Int)
 
+case class Result(ctr: Int)
+
 
 class rsvr extends EventsourcedProcessor {
   //context.setReceiveTimeout(10 seconds)
@@ -31,7 +37,7 @@ class rsvr extends EventsourcedProcessor {
   println("Intilaization")
   var counter  =0;
   def updateState(event: Evt): Unit =
-    counter = event.sal
+  counter = event.sal
 
   val receiveRecover: Receive = {
     case evt: Evt                                 => updateState(evt)
@@ -41,45 +47,35 @@ class rsvr extends EventsourcedProcessor {
     case a @ Cmd(step) =>
       //TODO switch to immutable
       counter = counter + a.step
-      println("AAAA " + a.step + "   " + counter)
       persist(Evt(counter)) {
         event => updateState(event)
           context.system.eventStream.publish(event)}
       // the message the cause the error will not be persisted..
-      if(counter.equals(20) ) {
-        sender() ! "Bye"
-        throw new Exception_Msgs.Exception_Msg("CounterService not available, lack of initial value")
+      if(counter==20)  {
+        sender() ! "Stop"
+        throw new Exception_Msgs.Exception_Msg("The counter reached its Maximum: i.e, 20")
       }
-      else if(counter > 40)
-      {
-        sender () ! "Stop"
-      }
-      else
-      {
-        println(counter + " " )
-        sender () ! "Again"
-      }
-    /*case ReceiveTimeout =>
-      context.setReceiveTimeout(Duration.Undefined)
-      println("Done")*/
-    //throw new RuntimeException("Receive timed out")
-
+    case "Request" => sender() ! counter
     case _ => sender() ! println("I do not understand")
   }
 }
 class sndr extends Actor {
 
-  // Stop the CounterService child if it throws ServiceUnavailable
-  val child = context.actorOf(Props[rsvr],"EventSorucer")
 
+  val child = context.actorOf(Props[rsvr],"EventSorucer")
   override val supervisorStrategy = OneForOneStrategy() {
     case _: Exception_Msgs.Exception_Msg => Restart
   }
-  // increase by one
-  child ! Cmd(step = 1)
+
+  case class Res (x: Int)
   def receive = {
-    case "Again" => child ! Cmd(step = 1)
-    case "Bye" => child ! Cmd(step = 2) // This shows how the events will be restored after restart.....
+    case "Add5" => child ! Cmd(step = 5)
+    case "Add6" => child ! Cmd(step = 6)
+    case "Request" =>
+      implicit val timeout = Timeout(10 seconds)
+      val future = child.ask("Request")(10 seconds) // enabled by the “ask” import
+      val result = Await.result(future, timeout.duration).asInstanceOf[Int]
+      sender() ! result
     case _ => println("Stop Working......")
   }
 }
@@ -87,23 +83,9 @@ object ActorEventSourcing extends App {
 
   val system = ActorSystem("Mysystem")
   val act = system.actorOf(Props[sndr],"Sender")
-
-
-  //Thread.sleep(500)
-  //system.shutdown()
-  //context.system.scheduler.schedule(Duration.Zero, 1 second, self, Do)
-
+  act ! "Add5"
+  act ! "Add5"
+  act ! "Add5"
+  act ! "Add6"
+  act ! "Request"
 }
-
-/*
-override val supervisorStrategy =
-OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
-case _: ArithmeticException => Resume
-case _: NullPointerException => Restart
-case _: IllegalArgumentException => Stop
-case _: Exception => Escalate
-}
-
-Just to check that ...
-
- */

@@ -4,7 +4,7 @@
 		module="firstakka_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20140611135627"
+		publication="20140616140353"
 	>
 		<description>
 		FirstAkka
@@ -32,9 +32,12 @@
 		<artifact name="firstakka_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.3.3" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.3" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.3.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-persistence-experimental_2.10" rev="2.3.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.10" rev="2.3.2" conf="test->default(compile);compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.10" rev="2.0" conf="test->default(compile)"/>
+		<dependency org="org.specs2" name="specs2_2.10" rev="2.2.3" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
