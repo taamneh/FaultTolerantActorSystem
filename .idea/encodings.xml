@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/activator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activator.bat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/application.conf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/logback.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/scala/FSMTester.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/scala/FSM_Fault_Tolerant_Tester.scala" charset="UTF-8" />
   </component>

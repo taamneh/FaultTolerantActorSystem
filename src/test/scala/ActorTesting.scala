@@ -21,7 +21,7 @@ class ActorTesting extends TestKit(ActorSystem("ActorEventSourcing"))
 with DefaultTimeout with ImplicitSender
 with WordSpecLike with Matchers with BeforeAndAfterAll {
 
-  println("Start Testing................")
+  println("Start Testing...............")
   val actorSndr = TestActorRef[sndr]
   val actor = actorSndr.underlyingActor
 

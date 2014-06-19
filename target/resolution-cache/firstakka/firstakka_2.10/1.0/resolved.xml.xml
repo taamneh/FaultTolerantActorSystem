@@ -4,7 +4,7 @@
 		module="firstakka_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20140616140353"
+		publication="20140617231123"
 	>
 		<description>
 		FirstAkka
@@ -37,7 +37,13 @@
 		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.3.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-persistence-experimental_2.10" rev="2.3.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.10" rev="2.3.2" conf="test->default(compile);compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-slf4j_2.10" rev="2.3.2" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.10" rev="2.0" conf="test->default(compile)"/>
 		<dependency org="org.specs2" name="specs2_2.10" rev="2.2.3" conf="test->default(compile)"/>
+		<dependency org="com.typesafe" name="scalalogging-slf4j_2.10" rev="1.0.1" conf="compile->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.1" conf="compile->default(compile)"/>
+		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.7.1" conf="compile->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.0.13" conf="compile->default(compile)"/>
+		<dependency org="ch.qos.logback.contrib" name="logback-json-classic" rev="0.1.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

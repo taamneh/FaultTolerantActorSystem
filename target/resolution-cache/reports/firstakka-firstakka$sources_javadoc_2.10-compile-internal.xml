@@ -7,8 +7,169 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140616140357"/>
+		date="20140619142044"/>
 	<dependencies>
+		<module organisation="ch.qos.logback.contrib" name="logback-json-classic">
+			<revision name="0.1.2" status="release" pubdate="20130203135056" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<metadata-artifact status="no" details="" size="6605" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-classic\ivy-0.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-classic/0.1.2/logback-json-classic-0.1.2.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="0.1.2" rev-constraint-default="0.1.2" rev-constraint-dynamic="0.1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-json-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3545" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-classic\srcs\logback-json-classic-0.1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-classic/0.1.2/logback-json-classic-0.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="logback-json-classic" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="27365" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-classic\docs\logback-json-classic-0.1.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-classic/0.1.2/logback-json-classic-0.1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-json-classic" type="jar" ext="jar" status="no" details="" size="5498" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-classic\jars\logback-json-classic-0.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-classic/0.1.2/logback-json-classic-0.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback.contrib" name="logback-json-core">
+			<revision name="0.1.2" status="release" pubdate="20130203135046" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="20">
+				<metadata-artifact status="no" details="" size="6443" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-core\ivy-0.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-core/0.1.2/logback-json-core-0.1.2.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="0.1.2" rev-constraint-default="0.1.2" rev-constraint-dynamic="0.1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-json-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="29052" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-core\docs\logback-json-core-0.1.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-core/0.1.2/logback-json-core-0.1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-json-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3167" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-core\srcs\logback-json-core-0.1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-core/0.1.2/logback-json-core-0.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="logback-json-core" type="jar" ext="jar" status="no" details="" size="5387" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback.contrib\logback-json-core\jars\logback-json-core-0.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/contrib/logback-json-core/0.1.2/logback-json-core-0.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="log4j-over-slf4j">
+			<revision name="1.7.1" status="release" pubdate="20120914161252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="16">
+				<license name="Apache Software Licenses" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4780" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\log4j-over-slf4j\ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.1/log4j-over-slf4j-1.7.1.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="log4j-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="150507" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\log4j-over-slf4j\docs\log4j-over-slf4j-1.7.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.1/log4j-over-slf4j-1.7.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="log4j-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25334" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\log4j-over-slf4j\srcs\log4j-over-slf4j-1.7.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.1/log4j-over-slf4j-1.7.1-sources.jar"/>
+					</artifact>
+					<artifact name="log4j-over-slf4j" type="jar" ext="jar" status="no" details="" size="19975" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\log4j-over-slf4j\jars\log4j-over-slf4j-1.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.1/log4j-over-slf4j-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="scalalogging-slf4j_2.10">
+			<revision name="1.0.1" status="release" pubdate="20121223164332" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/scalalogging" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2730" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe\scalalogging-slf4j_2.10\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-slf4j_2.10/1.0.1/scalalogging-slf4j_2.10-1.0.1.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalalogging-slf4j_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="368247" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe\scalalogging-slf4j_2.10\docs\scalalogging-slf4j_2.10-1.0.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-slf4j_2.10/1.0.1/scalalogging-slf4j_2.10-1.0.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalalogging-slf4j_2.10" type="jar" ext="jar" status="no" details="" size="78152" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe\scalalogging-slf4j_2.10\jars\scalalogging-slf4j_2.10-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-slf4j_2.10/1.0.1/scalalogging-slf4j_2.10-1.0.1.jar"/>
+					</artifact>
+					<artifact name="scalalogging-slf4j_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8291" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe\scalalogging-slf4j_2.10\srcs\scalalogging-slf4j_2.10-1.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-slf4j_2.10/1.0.1/scalalogging-slf4j_2.10-1.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.0" status="release" pubdate="20121220022932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2543" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Salah/Desktop/Scala/activator-1.1.3/repository/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="418349" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3149351" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.0.jar">
+						<origin-location is-local="false" location="file:/C:/Users/Salah/Desktop/Scala/activator-1.1.3/repository/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33515231" time="0" location="C:\Users\Salah\.ivy2\cache\org.scala-lang\scala-reflect\docs\scala-reflect-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409072404" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3079" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.10\ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.3.2/akka-slf4j_2.10-2.3.2.pom"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1971" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.10\srcs\akka-slf4j_2.10-2.3.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.3.2/akka-slf4j_2.10-2.3.2-sources.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="jar" ext="jar" status="no" details="" size="15519" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.10\jars\akka-slf4j_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.3.2/akka-slf4j_2.10-2.3.2.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="27082" time="0" location="C:\Users\Salah\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.10\docs\akka-slf4j_2.10-2.3.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.3.2/akka-slf4j_2.10-2.3.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.13" status="release" pubdate="20130510083446" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="17">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10249" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/ch.qos.logback/logback-classic/1.0.13/ivys/ivy.xml"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="218648" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-classic\srcs\logback-classic-1.0.13-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13-sources.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="264600" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.0.13.jar">
+						<origin-location is-local="false" location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/ch.qos.logback/logback-classic/1.0.13/jars/logback-classic.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1025971" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-classic\docs\logback-classic-1.0.13-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.13" status="release" pubdate="20130510083314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9513" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/ch.qos.logback/logback-core/1.0.13/ivys/ivy.xml"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="363737" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-core\srcs\logback-core-1.0.13-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-sources.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1874335" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-core\docs\logback-core-1.0.13-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="418870" time="0" location="C:\Users\Salah\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.0.13.jar">
+						<origin-location is-local="false" location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/ch.qos.logback/logback-core/1.0.13/jars/logback-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.5" status="release" pubdate="20130325165215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<metadata-artifact status="no" details="" size="4461" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/org.slf4j/slf4j-api/1.7.5/ivys/ivy.xml"/>
+				<caller organisation="firstakka" name="firstakka$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47186" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\slf4j-api\srcs\slf4j-api-1.7.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="26084" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.5.jar">
+						<origin-location is-local="false" location="file:////C:/Users/Salah/Desktop/Scala/activator-1.1.3//repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="183075" time="0" location="C:\Users\Salah\.ivy2\cache\org.slf4j\slf4j-api\docs\slf4j-api-1.7.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10">
 			<revision name="2.3.2" status="release" pubdate="20140409072523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>

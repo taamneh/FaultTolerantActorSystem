@@ -7,14 +7,17 @@ import akka.actor._
 import akka.pattern.{ ask, pipe }
 import akka.actor.SupervisorStrategy._
 import com.typesafe.config.ConfigFactory
-import akka.event.LoggingReceive
+import akka.event.{Logging, LoggingReceive}
 import akka.pattern.{ ask, pipe }
 import scala.collection.parallel.immutable
 import scala.collection._
 import scala.concurrent.duration._
 import akka.persistence._
-import scala.concurrent.Await
+import scala.concurrent.{Future, Await}
 import akka.util.Timeout
+import akka.event.Logging
+
+
 
 
 object Exception_Msgs
@@ -32,7 +35,6 @@ case class Result(ctr: Int)
 
 
 class rsvr extends EventsourcedProcessor {
-  //context.setReceiveTimeout(10 seconds)
 
   println("Intilaization")
   var counter  =0;
@@ -40,9 +42,12 @@ class rsvr extends EventsourcedProcessor {
   counter = event.sal
 
   val receiveRecover: Receive = {
-    case evt: Evt                                 => updateState(evt)
-    //case SnapshotOffer(_, snapshot: ExampleState) => state = snapshot
-  }
+
+    case evt: Evt =>
+      println("sd")
+      updateState(evt)
+      //case SnapshotOffer(_, snapshot: ExampleState) => state = snapshot
+}
   val receiveCommand: Receive = {
     case a @ Cmd(step) =>
       //TODO switch to immutable
@@ -56,12 +61,11 @@ class rsvr extends EventsourcedProcessor {
         throw new Exception_Msgs.Exception_Msg("The counter reached its Maximum: i.e, 20")
       }
     case "Request" => sender() ! counter
+    case "snap"  => saveSnapshot(counter)
     case _ => sender() ! println("I do not understand")
   }
 }
 class sndr extends Actor {
-
-
   val child = context.actorOf(Props[rsvr],"EventSorucer")
   override val supervisorStrategy = OneForOneStrategy() {
     case _: Exception_Msgs.Exception_Msg => Restart
@@ -84,8 +88,19 @@ object ActorEventSourcing extends App {
   val system = ActorSystem("Mysystem")
   val act = system.actorOf(Props[sndr],"Sender")
   act ! "Add5"
+  Req
   act ! "Add5"
   act ! "Add5"
+  act ! "Add5"
+  Thread.sleep(500)
   act ! "Add6"
-  act ! "Request"
+  Req
+
+  def Req = {
+    implicit val timeout = Timeout(5 seconds)
+    val future: Future[Any] = act.ask("Request")(5 seconds) // enabled by the “ask” import
+    val result = Await.result(future, timeout.duration).asInstanceOf[Int]
+    println(">>>>>>>  " + result)
+  }
+
 }

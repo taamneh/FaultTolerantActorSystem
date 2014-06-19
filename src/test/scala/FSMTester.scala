@@ -1,10 +1,5 @@
 
 import akka.actor.{ActorSystem, Props}
-import akka.testkit.DefaultTimeout
-import akka.testkit.ImplicitSender
-import akka.testkit.TestKit
-import scala.concurrent.duration._
-import scala.collection.immutable
 import akka.testkit.{ImplicitSender, DefaultTimeout, TestKit}
 import akka.actor.{Props, ActorSystem}
 import org.scalatest.{BeforeAndAfterAll, Matchers, WordSpecLike}
@@ -32,11 +27,11 @@ with WordSpecLike with Matchers with BeforeAndAfterAll {
   val fsm = TestFSMRef(new GPA_Calulation)
   val mustBeTypedProperly: TestActorRef[GPA_Calulation] = fsm
 
-  assert(fsm.stateName == Excellent, "Start in the Init state")
+  /*assert(fsm.stateName == Excellent, "Start in the Init state")
   assert(fsm.stateData == Uninitialized, "No initial state data")
   fsm ! "Throw"
 
-  assert(fsm.stateName == Excellent, "Start in the Init state")
+  assert(fsm.stateName == Excellent, "Start in the Init state")*/
   //fsm.stateName should be(Excellent)
   //assert(fsm.stateName == None, "Start in the Init state")
   //assert(fsm.stateData == Uninitialized, "No initial state data")

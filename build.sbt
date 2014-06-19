@@ -10,6 +10,12 @@ libraryDependencies ++=   Seq( "com.typesafe.akka" %% "akka-actor" % "2.3.2",
                               "com.typesafe.akka" %% "akka-persistence-experimental" % "2.3.2",
                               "com.typesafe.akka"          %%  "akka-testkit"             % "2.3.2"          % "test",
                               "com.typesafe.akka"          %% "akka-testkit"              % "2.3.2",
+                              "com.typesafe.akka"          %%  "akka-slf4j"               % "2.3.2",
                               "org.scalatest"              % "scalatest_2.10"             % "2.0"             % "test",
-                              "org.specs2"                 %% "specs2"                    % "2.2.3"           % "test"
+                              "org.specs2"                 %% "specs2"                    % "2.2.3"           % "test",
+                              "com.typesafe" 		           %% "scalalogging-slf4j"        % "1.0.1",
+                              "org.slf4j" 			           % "slf4j-api" 			            % "1.7.1",
+                              "org.slf4j" 			           % "log4j-over-slf4j" 	        % "1.7.1",
+                              "ch.qos.logback" 	           % "logback-classic" 	    % "1.0.13",
+                              "ch.qos.logback.contrib"     % "logback-json-classic" % "0.1.2"
 )
