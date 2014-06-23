@@ -4,7 +4,7 @@
 		module="firstakka$sources_javadoc_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20140619142043"
+		publication="20140623155845"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
