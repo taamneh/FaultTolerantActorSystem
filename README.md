@@ -14,6 +14,6 @@ A simple application that shows how event sourcing and command sourcing techniqu
 
 - Type "Request" to get the GPA
 
-- Type "Throw" to fail the GPA caculatot Actor and to see how the program will react by reading from journal 
+- Type "Throw" to fail the GPA calculator Actor and to see how the program will react by reading from journal 
 
 - To free the journal, just delete "Journal" Folder
